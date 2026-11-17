@@ -1,0 +1,48 @@
+{
+  "data": {
+    "lines": [
+      {
+        "variant_id": 205,
+        "qty": 2,
+        "list_unit_price_satang": 59000,
+        "unit_price_satang": 59000,
+        "price_source": {
+          "kind": "list",
+          "label": ""
+        },
+        "adjustments": [],
+        "line_total_satang": 118000,
+        "allocated_discount_satang": 0,
+        "lowest_30d_satang": null,
+        "availability": {
+          "status": "ok",
+          "available_qty": 50
+        }
+      }
+    ],
+    "adjustments": [],
+    "shipping": {
+      "fee_satang": 4000,
+      "discount_satang": 4000,
+      "promotion_id": 31,
+      "label": "ส่งฟรีเมื่อช้อปครบ ฿999"
+    },
+    "totals": {
+      "list_subtotal_satang": 118000,
+      "subtotal_satang": 118000,
+      "discount_satang": 0,
+      "shipping_satang": 0,
+      "savings_satang": 4000,
+      "grand_total_satang": 118000
+    },
+    "coupon": {
+      "code": "SONGKRAN26",
+      "status": "invalid",
+      "reason_code": "expired",
+      "message": "โค้ด SONGKRAN26 หมดอายุแล้ว (สิ้นสุด 16 เม.ย. 2026)"
+    },
+    "hints": [],
+    "quote_hash": "b3c5845598d135acb42555ffc476f5990a414f4a9564537cf5e8ec40da20643d",
+    "expires_at": "2026-11-17T03:10:00Z"
+  }
+}

@@ -1,0 +1,17 @@
+import { launch, newClient, watch, WEB, sleep, uiLogin, text, shot } from "./lib.mjs";
+import fs from "node:fs";
+const no = fs.readFileSync("out/last-order.txt", "utf8").trim();
+const b = await launch();
+const { page } = await newClient(b);
+const iss = watch(page);
+await uiLogin(page, "customer", "/account/orders");
+await sleep(2000);
+console.log((await text(page)).slice(0, 1500));
+await page.goto(`${WEB}/account/orders/${no}`, { waitUntil: "load" });
+await sleep(5000);
+const t = await text(page);
+console.log("----", no, t.includes(no));
+console.log(t.slice(0, 2500));
+await shot(page, "store/order-detail", { fullPage: true });
+console.log(iss);
+await b.close();

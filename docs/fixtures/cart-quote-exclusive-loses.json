@@ -1,0 +1,55 @@
+{
+  "data": {
+    "lines": [
+      {
+        "variant_id": 301,
+        "qty": 1,
+        "list_unit_price_satang": 120000,
+        "unit_price_satang": 120000,
+        "price_source": {
+          "kind": "list",
+          "label": ""
+        },
+        "adjustments": [],
+        "line_total_satang": 120000,
+        "allocated_discount_satang": 15000,
+        "lowest_30d_satang": null,
+        "availability": {
+          "status": "ok",
+          "available_qty": 50
+        }
+      }
+    ],
+    "adjustments": [
+      {
+        "promotion_id": 21,
+        "layer": 3,
+        "label": "ช้อปครบ ฿1,000 ลด ฿150",
+        "amount_satang": 15000
+      }
+    ],
+    "shipping": {
+      "fee_satang": 4000,
+      "discount_satang": 4000,
+      "promotion_id": 31,
+      "label": "ส่งฟรีเมื่อช้อปครบ ฿999"
+    },
+    "totals": {
+      "list_subtotal_satang": 120000,
+      "subtotal_satang": 120000,
+      "discount_satang": 15000,
+      "shipping_satang": 0,
+      "savings_satang": 19000,
+      "grand_total_satang": 105000
+    },
+    "coupon": {
+      "code": "SAVE10X",
+      "status": "not_applied",
+      "reason_code": "exclusive_not_better",
+      "message": "โค้ด SAVE10X ใช้ร่วมกับโปรอื่นไม่ได้ และลดน้อยกว่าโปร 'ช้อปครบ ฿1,000 ลด ฿150' ที่ได้รับอยู่แล้ว"
+    },
+    "hints": [],
+    "quote_hash": "cf03f54494293dbd84a493292747684a4a1313c91285dca42c2ad26dd684517f",
+    "expires_at": "2026-11-17T03:10:00Z"
+  }
+}

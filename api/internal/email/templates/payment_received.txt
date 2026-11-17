@@ -1,0 +1,11 @@
+{{define "subject"}}ชำระเงินสำเร็จ คำสั่งซื้อ {{.Order.No}}{{end}}
+{{define "preheader"}}เราได้รับเงิน {{baht .Order.GrandTotalSatang}} แล้ว กำลังเตรียมจัดส่ง{{end}}
+{{define "content"}}สวัสดีคุณ{{name .Name}}
+
+เราได้รับการชำระเงินแล้ว ขอบคุณค่ะ กำลังเตรียมสินค้าเพื่อจัดส่ง และจะแจ้งเลขพัสดุให้ทราบอีกครั้ง
+{{with .Order}}{{template "ordermeta" .}}
+ยอดที่ชำระ: {{baht .GrandTotalSatang}} ({{method .PaymentMethod}}){{if not .PaidAt.IsZero}}
+ชำระเมื่อ: {{thaidate .PaidAt}}{{end}}
+
+{{template "summary" .}}
+ดูคำสั่งซื้อ: {{.URL}}{{end}}{{end}}

@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "variant_id": 101,
+      "list_price_satang": 25000,
+      "price_satang": 25000,
+      "price_source": {
+        "kind": "list",
+        "label": ""
+      },
+      "lowest_30d_satang": null,
+      "qty_breaks": [
+        {
+          "min_qty": 10,
+          "unit_price_satang": 21000
+        },
+        {
+          "min_qty": 50,
+          "unit_price_satang": 19000
+        }
+      ],
+      "badges": [
+        "ราคาส่งเมื่อซื้อ 10 ใบขึ้นไป"
+      ]
+    },
+    {
+      "variant_id": 205,
+      "list_price_satang": 59000,
+      "price_satang": 53100,
+      "price_source": {
+        "kind": "tier_price",
+        "label": "สมาชิก Gold ลด 10%"
+      },
+      "lowest_30d_satang": 59000,
+      "qty_breaks": [],
+      "badges": []
+    }
+  ]
+}

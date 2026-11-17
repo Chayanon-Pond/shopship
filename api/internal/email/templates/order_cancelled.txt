@@ -1,0 +1,11 @@
+{{define "subject"}}ยกเลิกคำสั่งซื้อ {{.Order.No}} แล้ว{{end}}
+{{define "preheader"}}{{if .Reason}}{{.Reason}}{{else}}คำสั่งซื้อของคุณถูกยกเลิก{{end}}{{end}}
+{{define "content"}}สวัสดีคุณ{{name .Name}}
+
+คำสั่งซื้อ {{.Order.No}} ถูกยกเลิกแล้ว{{if .Reason}}
+เหตุผล: {{.Reason}}{{end}}
+{{if .WasPaid}}
+เราจะคืนเงิน {{baht .Order.GrandTotalSatang}} ให้ตามช่องทางที่คุณชำระ และจะแจ้งอีกครั้งเมื่อดำเนินการคืนเงินแล้ว
+{{end}}
+{{with .Order}}{{template "summary" .}}{{end}}
+ดูคำสั่งซื้อ: {{.Order.URL}}{{end}}

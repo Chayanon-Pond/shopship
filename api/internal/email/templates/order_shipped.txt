@@ -1,0 +1,11 @@
+{{define "subject"}}จัดส่งแล้ว คำสั่งซื้อ {{.Order.No}}{{end}}
+{{define "preheader"}}{{with .Shipment}}เลขพัสดุ {{.TrackingNo}} ({{.Carrier}}){{else}}พัสดุของคุณออกจากคลังแล้ว{{end}}{{end}}
+{{define "content"}}สวัสดีคุณ{{name .Name}}
+
+พัสดุของคุณออกจากคลังแล้ว
+{{with .Shipment}}{{template "parcel" .}}{{end}}
+{{with .Order}}{{template "ordermeta" .}}
+
+{{template "shipto" .}}
+
+ดูคำสั่งซื้อ: {{.URL}}{{end}}{{end}}

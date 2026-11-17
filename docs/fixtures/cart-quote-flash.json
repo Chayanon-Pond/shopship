@@ -1,0 +1,78 @@
+{
+  "data": {
+    "lines": [
+      {
+        "variant_id": 401,
+        "qty": 1,
+        "list_unit_price_satang": 89000,
+        "unit_price_satang": 59000,
+        "price_source": {
+          "kind": "flash_sale",
+          "label": "Flash Sale 11.11",
+          "flash_sale_item_id": 71
+        },
+        "adjustments": [],
+        "line_total_satang": 59000,
+        "allocated_discount_satang": 0,
+        "lowest_30d_satang": 85000,
+        "availability": {
+          "status": "ok",
+          "available_qty": 38
+        }
+      },
+      {
+        "variant_id": 502,
+        "qty": 3,
+        "list_unit_price_satang": 9900,
+        "unit_price_satang": 9900,
+        "price_source": {
+          "kind": "list",
+          "label": ""
+        },
+        "adjustments": [
+          {
+            "promotion_id": 15,
+            "layer": 2,
+            "label": "ซื้อ 2 แถม 1",
+            "amount_satang": 9900
+          }
+        ],
+        "line_total_satang": 19800,
+        "allocated_discount_satang": 0,
+        "lowest_30d_satang": null,
+        "availability": {
+          "status": "ok",
+          "available_qty": 50
+        }
+      }
+    ],
+    "adjustments": [],
+    "shipping": {
+      "fee_satang": 4000,
+      "discount_satang": 0
+    },
+    "totals": {
+      "list_subtotal_satang": 118700,
+      "subtotal_satang": 78800,
+      "discount_satang": 0,
+      "shipping_satang": 4000,
+      "savings_satang": 39900,
+      "grand_total_satang": 82800
+    },
+    "coupon": null,
+    "hints": [
+      {
+        "kind": "free_shipping_gap",
+        "message": "ช้อปเพิ่มอีก ฿211 รับส่งฟรี",
+        "amount_satang": 21100,
+        "promotion_id": 31
+      },
+      {
+        "kind": "login_for_member_price",
+        "message": "เข้าสู่ระบบเพื่อดูราคาสมาชิก"
+      }
+    ],
+    "quote_hash": "abdbca6d7215899d8446de339304b926134c7b366172105a2921ba5dd24379a5",
+    "expires_at": "2026-11-17T03:10:00Z"
+  }
+}

@@ -1,0 +1,23 @@
+{{define "ordermeta"}}หมายเลขคำสั่งซื้อ: {{.No}}
+สั่งซื้อเมื่อ: {{thaidate .CreatedAt}}{{end}}
+
+{{define "summary"}}รายการสินค้า
+{{range .Items}}- {{.Name}}{{if .Variant}} ({{.Variant}}){{end}}
+  {{.Qty}} x {{baht .UnitSatang}}{{if strike .}} (ปกติ {{baht .ListUnitSatang}}){{end}}{{if .PriceLabel}} · {{.PriceLabel}}{{end}} = {{baht .LineTotalSatang}}
+{{range .Adjustments}}  {{.Label}} {{neg .Amount}}
+{{end}}{{end}}
+ยอดรวมสินค้า: {{baht .SubtotalSatang}}
+{{range .Discounts}}{{.Label}}: {{neg .Amount}}
+{{end}}ค่าจัดส่ง: {{baht .ShippingFeeSatang}}
+{{with .ShippingDiscount}}{{.Label}}: {{neg .Amount}}
+{{end}}ยอดชำระทั้งหมด: {{baht .GrandTotalSatang}}
+{{if gt .SavingsSatang 0}}คุณประหยัดไป {{baht .SavingsSatang}}
+{{end}}{{end}}
+
+{{define "shipto"}}ที่อยู่จัดส่ง
+{{.ShipName}} · {{.ShipPhone}}
+{{.ShipAddress}}{{end}}
+
+{{define "parcel"}}ขนส่งโดย: {{.Carrier}}
+เลขพัสดุ: {{.TrackingNo}}{{if .TrackingURL}}
+ติดตามพัสดุ: {{.TrackingURL}}{{end}}{{end}}

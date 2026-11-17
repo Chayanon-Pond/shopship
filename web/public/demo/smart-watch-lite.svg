@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+<defs>
+<radialGradient id="bg" cx="50%" cy="38%" r="75%"><stop offset="0" stop-color="#f7f7f9"/><stop offset="1" stop-color="#e9e9ee"/></radialGradient>
+<radialGradient id="sh" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="band" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3a3c"/><stop offset="1" stop-color="#1d1d1f"/></linearGradient><linearGradient id="case" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#48484a"/><stop offset="1" stop-color="#1d1d1f"/></linearGradient><linearGradient id="scr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b2140"/><stop offset="1" stop-color="#05060c"/></linearGradient>
+</defs>
+<rect width="800" height="800" fill="url(#bg)"/>
+<ellipse cx="400" cy="690" rx="170" ry="34" fill="url(#sh)"/>
+<rect x="315" y="70" width="170" height="250" rx="60" fill="url(#band)"/>
+<rect x="315" y="480" width="170" height="230" rx="60" fill="url(#band)"/>
+<rect x="250" y="230" width="300" height="350" rx="86" fill="url(#case)"/>
+<rect x="268" y="248" width="264" height="314" rx="72" fill="url(#scr)"/>
+<rect x="552" y="330" width="16" height="70" rx="8" fill="#1d1d1f"/>
+<text x="400" y="380" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="78" font-weight="600" fill="#fff">10:09</text>
+<text x="400" y="430" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="26" fill="#ff9f0a">TUE 17</text>
+<circle cx="340" cy="490" r="26" fill="none" stroke="#30d158" stroke-width="9" stroke-dasharray="120 60"/>
+<circle cx="400" cy="490" r="26" fill="none" stroke="#0a84ff" stroke-width="9" stroke-dasharray="90 90"/>
+<circle cx="460" cy="490" r="26" fill="none" stroke="#ff375f" stroke-width="9" stroke-dasharray="140 40"/>
+<rect x="268" y="248" width="264" height="150" rx="72" fill="url(#gloss)" opacity=".25"/>
+</svg>

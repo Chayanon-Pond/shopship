@@ -1,0 +1,39 @@
+{
+  "data": {
+    "id": 3,
+    "slug": "11-11-2026",
+    "name": "11.11 Big Sale",
+    "season_tag": "11-11",
+    "theme": {
+      "accent": "#0071E3",
+      "accent_contrast": "#FFFFFF",
+      "background": "#FFFFFF",
+      "hero_image_url": "/mock/hero-1111.svg",
+      "badge_text": "11.11"
+    },
+    "starts_at": "2026-11-10T17:00:00Z",
+    "ends_at": "2026-11-17T17:00:00Z",
+    "banners": [
+      {
+        "id": 1,
+        "placement": "home_hero",
+        "title": "11.11 ลดสูงสุด 50%",
+        "subtitle": "เฉพาะวันนี้ถึงเที่ยงคืน",
+        "cta_label": "ช้อปเลย",
+        "link_url": "/flash-sale",
+        "image_url": "/mock/hero-1111.svg",
+        "image_mobile_url": "",
+        "image_alt": "แคมเปญ 11.11",
+        "campaign_id": 3
+      }
+    ],
+    "promo_codes": [
+      {
+        "code": "SAVE10X",
+        "label": "โค้ด SAVE10X ลด 10%",
+        "description": "ลด 10% สูงสุด ฿100 ใช้ร่วมกับโปรช้อปครบไม่ได้ (1 สิทธิ์/บัญชี)",
+        "ends_at": "2026-11-17T17:00:00Z"
+      }
+    ]
+  }
+}

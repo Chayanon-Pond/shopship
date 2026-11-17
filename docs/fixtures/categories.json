@@ -1,0 +1,115 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "slug": "fashion",
+      "name": "แฟชั่น",
+      "description": "",
+      "image_url": "",
+      "icon": "Shirt",
+      "parent_id": null,
+      "sort_order": 1,
+      "product_count": 3,
+      "children": [
+        {
+          "id": 11,
+          "slug": "shirts",
+          "name": "เสื้อ",
+          "description": "",
+          "image_url": "",
+          "icon": "Shirt",
+          "parent_id": 1,
+          "sort_order": 1,
+          "product_count": 1,
+          "children": []
+        },
+        {
+          "id": 12,
+          "slug": "bags",
+          "name": "กระเป๋า",
+          "description": "",
+          "image_url": "",
+          "icon": "ShoppingBag",
+          "parent_id": 1,
+          "sort_order": 2,
+          "product_count": 1,
+          "children": []
+        },
+        {
+          "id": 13,
+          "slug": "socks",
+          "name": "ถุงเท้า",
+          "description": "",
+          "image_url": "",
+          "icon": "Footprints",
+          "parent_id": 1,
+          "sort_order": 3,
+          "product_count": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "electronics",
+      "name": "อิเล็กทรอนิกส์",
+      "description": "",
+      "image_url": "",
+      "icon": "Headphones",
+      "parent_id": null,
+      "sort_order": 2,
+      "product_count": 2,
+      "children": [
+        {
+          "id": 21,
+          "slug": "audio",
+          "name": "เครื่องเสียง",
+          "description": "",
+          "image_url": "",
+          "icon": "Headphones",
+          "parent_id": 2,
+          "sort_order": 1,
+          "product_count": 1,
+          "children": []
+        },
+        {
+          "id": 22,
+          "slug": "wearables",
+          "name": "อุปกรณ์สวมใส่",
+          "description": "",
+          "image_url": "",
+          "icon": "Watch",
+          "parent_id": 2,
+          "sort_order": 2,
+          "product_count": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "home",
+      "name": "บ้านและครัว",
+      "description": "",
+      "image_url": "",
+      "icon": "Sofa",
+      "parent_id": null,
+      "sort_order": 3,
+      "product_count": 1,
+      "children": [
+        {
+          "id": 31,
+          "slug": "kitchen",
+          "name": "ครัว",
+          "description": "",
+          "image_url": "",
+          "icon": "Coffee",
+          "parent_id": 3,
+          "sort_order": 1,
+          "product_count": 1,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

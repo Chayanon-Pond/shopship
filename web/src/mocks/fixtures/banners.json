@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "placement": "home_hero",
+      "title": "11.11 ลดสูงสุด 50%",
+      "subtitle": "เฉพาะวันนี้ถึงเที่ยงคืน",
+      "cta_label": "ช้อปเลย",
+      "link_url": "/flash-sale",
+      "image_url": "/mock/hero-1111.svg",
+      "image_mobile_url": "",
+      "image_alt": "แคมเปญ 11.11",
+      "campaign_id": 3
+    },
+    {
+      "id": 2,
+      "placement": "home_hero",
+      "title": "ของใช้ทุกวัน ราคาส่ง",
+      "subtitle": "ซื้อ 10 ชิ้นขึ้นไป ราคาถูกลงทันที",
+      "cta_label": "ดูสินค้า",
+      "link_url": "/c/bags",
+      "image_url": "/mock/hero-songkran.svg",
+      "image_mobile_url": "",
+      "image_alt": "ราคาส่ง",
+      "campaign_id": null
+    }
+  ]
+}

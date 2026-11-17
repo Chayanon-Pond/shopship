@@ -1,0 +1,9 @@
+{{define "subject"}}คืนเงิน {{baht .RefundSatang}} สำหรับคำสั่งซื้อ {{.Order.No}}{{end}}
+{{define "preheader"}}เราดำเนินการคืนเงินให้คุณแล้ว{{end}}
+{{define "content"}}สวัสดีคุณ{{name .Name}}
+
+เราดำเนินการคืนเงิน {{baht .RefundSatang}} สำหรับคำสั่งซื้อ {{.Order.No}} แล้ว ({{method .Order.PaymentMethod}}){{if .LatePayment}}
+เนื่องจากได้รับการชำระเงินหลังจากคำสั่งซื้อถูกยกเลิก{{end}}
+ระยะเวลาที่เงินเข้าบัญชีขึ้นอยู่กับธนาคารหรือผู้ให้บริการบัตรของคุณ
+
+ดูคำสั่งซื้อ: {{.Order.URL}}{{end}}

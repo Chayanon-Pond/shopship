@@ -1,0 +1,84 @@
+{
+  "data": {
+    "lines": [
+      {
+        "variant_id": 101,
+        "qty": 12,
+        "list_unit_price_satang": 25000,
+        "unit_price_satang": 21000,
+        "price_source": {
+          "kind": "quantity_break",
+          "label": "ราคาส่ง 10 ชิ้นขึ้นไป",
+          "promotion_id": 11
+        },
+        "adjustments": [],
+        "line_total_satang": 252000,
+        "allocated_discount_satang": 12600,
+        "lowest_30d_satang": 25000,
+        "availability": {
+          "status": "ok",
+          "available_qty": 50
+        }
+      },
+      {
+        "variant_id": 205,
+        "qty": 1,
+        "list_unit_price_satang": 59000,
+        "unit_price_satang": 59000,
+        "price_source": {
+          "kind": "list",
+          "label": ""
+        },
+        "adjustments": [],
+        "line_total_satang": 59000,
+        "allocated_discount_satang": 2950,
+        "lowest_30d_satang": null,
+        "availability": {
+          "status": "ok",
+          "available_qty": 50
+        }
+      }
+    ],
+    "adjustments": [
+      {
+        "promotion_id": 41,
+        "layer": 4,
+        "label": "โค้ด TRADE5 ลด 5%",
+        "amount_satang": 15550,
+        "coupon_code": "TRADE5"
+      }
+    ],
+    "shipping": {
+      "fee_satang": 4000,
+      "discount_satang": 4000,
+      "promotion_id": 31,
+      "label": "ส่งฟรีเมื่อช้อปครบ ฿999"
+    },
+    "totals": {
+      "list_subtotal_satang": 359000,
+      "subtotal_satang": 311000,
+      "discount_satang": 15550,
+      "shipping_satang": 0,
+      "savings_satang": 67550,
+      "grand_total_satang": 295450
+    },
+    "coupon": {
+      "code": "TRADE5",
+      "status": "applied",
+      "reason_code": "",
+      "message": "ใช้โค้ด TRADE5 แล้ว ลด ฿155.50"
+    },
+    "hints": [
+      {
+        "kind": "quantity_break_gap",
+        "message": "หยิบเพิ่มอีก 38 ชิ้น รับราคาส่ง ฿190/ชิ้น",
+        "promotion_id": 11,
+        "variant_id": 101,
+        "qty_needed": 38,
+        "unit_price_satang": 19000
+      }
+    ],
+    "quote_hash": "0e4a734f69b1fee50165a1245ae6210311f719cf8f0b0b7cd594b723bb43e3f1",
+    "expires_at": "2026-11-17T03:10:00Z"
+  }
+}

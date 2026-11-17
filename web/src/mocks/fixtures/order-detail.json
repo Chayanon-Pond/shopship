@@ -1,0 +1,104 @@
+{
+  "data": {
+    "order_no": "SS261117A7K2",
+    "status": "paid",
+    "items": [
+      {
+        "variant_id": 101,
+        "product_slug": "canvas-tote-bag",
+        "sku": "TOTE-NAT",
+        "product_name": "ถุงผ้าแคนวาส",
+        "variant_name": "สีธรรมชาติ",
+        "image_url": "/mock/canvas-tote.svg",
+        "qty": 12,
+        "list_unit_price_satang": 25000,
+        "unit_price_satang": 21000,
+        "price_source": {
+          "kind": "quantity_break",
+          "label": "ราคาส่ง 10 ชิ้นขึ้นไป"
+        },
+        "line_discount_satang": 0,
+        "line_total_satang": 252000,
+        "allocated_discount_satang": 12600,
+        "lowest_30d_satang": 25000
+      },
+      {
+        "variant_id": 205,
+        "product_slug": "linen-shirt",
+        "sku": "LIN-WHT-M",
+        "product_name": "เสื้อเชิ้ตลินิน",
+        "variant_name": "ขาว / M",
+        "image_url": "/mock/linen-shirt-white.svg",
+        "qty": 1,
+        "list_unit_price_satang": 59000,
+        "unit_price_satang": 59000,
+        "price_source": {
+          "kind": "list",
+          "label": ""
+        },
+        "line_discount_satang": 0,
+        "line_total_satang": 59000,
+        "allocated_discount_satang": 2950,
+        "lowest_30d_satang": null
+      }
+    ],
+    "adjustments": [
+      {
+        "promotion_id": 41,
+        "layer": 4,
+        "label": "โค้ด TRADE5 ลด 5%",
+        "amount_satang": 15550,
+        "coupon_code": "TRADE5"
+      }
+    ],
+    "totals": {
+      "list_subtotal_satang": 359000,
+      "subtotal_satang": 311000,
+      "discount_satang": 15550,
+      "shipping_fee_satang": 4000,
+      "shipping_discount_satang": 4000,
+      "savings_satang": 67550,
+      "grand_total_satang": 295450
+    },
+    "coupon_code": "TRADE5",
+    "payment_method": "promptpay",
+    "shipping_address": {
+      "label": "ร้าน",
+      "recipient_name": "สมชาย ใจดี",
+      "phone": "0812345678",
+      "line1": "99/9 ซอยสุขุมวิท 50",
+      "line2": "",
+      "subdistrict": "พระโขนง",
+      "district": "คลองเตย",
+      "province": "กรุงเทพมหานคร",
+      "postal_code": "10110",
+      "country": "TH",
+      "is_default": true
+    },
+    "email": "somchai@example.com",
+    "customer_note": "",
+    "payment": {
+      "status": "successful",
+      "method": "promptpay",
+      "charge_id": "chrg_mock_5v8q2k",
+      "expires_at": "2026-11-17T03:15:00Z"
+    },
+    "shipment": null,
+    "timeline": [
+      {
+        "status": "pending_payment",
+        "at": "2026-11-17T03:00:00Z",
+        "note": ""
+      },
+      {
+        "status": "paid",
+        "at": "2026-11-17T03:02:41Z",
+        "note": "PromptPay"
+      }
+    ],
+    "payment_due_at": "2026-11-17T03:15:00Z",
+    "paid_at": "2026-11-17T03:02:41Z",
+    "cancelled_at": null,
+    "created_at": "2026-11-17T03:00:00Z"
+  }
+}

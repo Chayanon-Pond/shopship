@@ -1,0 +1,10 @@
+﻿handle,name_th,name_en,subtitle,description,category_slug,brand,status,featured,tags,option1_name,option1_value,option2_name,option2_value,option3_name,option3_value,sku,price_baht,cost_baht,stock,low_stock_threshold,weight_grams,barcode,variant_active,image_urls,seo_title,seo_description
+cotton-tee-everyday,เสื้อยืดคอตตอน รุ่นเอเวอรีเดย์,Everyday Cotton Tee,ผ้าคอตตอน 100% นุ่ม ไม่ย้วย,"ผ้าคอตตอน 100%, หนา 180 แกรม
+ซักเครื่องได้ ไม่หด",tshirts,ShopShip Basics,active,false,คอตตอน|เสื้อยืด|ขายดี,สี,ขาว,ไซซ์,M,,,,259,110,40,,180,,,,,
+cotton-tee-everyday,,,,,,,,,,สี,ขาว,ไซซ์,L,,,,259,,35,,190,,,,,
+cotton-tee-everyday,,,,,,,,,,สี,ดำ,ไซซ์,M,,,,279,,25,,180,,,,,
+cotton-tee-everyday,,,,,,,,,,สี,ดำ,ไซซ์,L,,,,279,,0,,190,,false,,,
+linen-shirt-mandarin,เสื้อเชิ้ตลินิน คอจีน,Mandarin Linen Shirt,,"ลินินแท้จากฝรั่งเศส, ระบายอากาศดี",shirts,Linen & Co.,draft,,,ไซซ์,M,,,,,LINEN-MAN-M,"1,290.50",,12,,260,8850000000017,,,,
+linen-shirt-mandarin,,,,,,,,,,ไซซ์,L,,,,,LINEN-MAN-L,"1,290.50",,8,,270,8850000000024,,,,
+canvas-tote-natural,กระเป๋าผ้าแคนวาส สีธรรมชาติ,Natural Canvas Tote,"ใส่โน้ตบุ๊ก 14"" ได้",,bags,ShopShip Basics,draft,,,,,,,,,,349,,60,,320,,,https://images.example.com/tote-natural-1.jpg|https://images.example.com/tote-natural-2.jpg,กระเป๋าผ้าแคนวาส | ShopShip,
+thai-tea-mix,ผงชาไทยปรุงสำเร็จ 500 กรัม,Thai Tea Mix 500 g,,,drinks,บ้านชา,active,,ชาไทย|ของฝาก,,,,,,,,89.995,,120,20,520,,,,,

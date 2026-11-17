@@ -1,0 +1,17 @@
+{
+  "data": {
+    "charge_id": "chrg_mock_5v8q2k",
+    "order_no": "SS261117A7K2",
+    "method": "promptpay",
+    "status": "pending",
+    "amount_satang": 295450,
+    "promptpay": {
+      "qr_payload": "00020101021230570016A000000677010112011501055600000000002150SS261117A7K253037645407295450.5802TH6304ABCD",
+      "qr_image_url": null,
+      "expires_at": "2026-11-17T03:15:00Z"
+    },
+    "authorize_uri": null,
+    "failure_code": null,
+    "failure_message": null
+  }
+}

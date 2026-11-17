@@ -1,0 +1,32 @@
+{
+  "data": {
+    "id": 1,
+    "email": "owner@shopship.local",
+    "name": "เจ้าของร้าน",
+    "phone": "",
+    "role": "owner",
+    "tier": "standard",
+    "group": null,
+    "marketing_consent": false,
+    "email_verified": true,
+    "created_at": "2026-11-01T00:00:00Z",
+    "perms": [
+      "dashboard:read",
+      "catalog:read",
+      "inventory:write",
+      "orders:read",
+      "orders:fulfil",
+      "promotions:read",
+      "catalog:write",
+      "orders:manage",
+      "promotions:write",
+      "customers:read",
+      "customers:write",
+      "banners:write",
+      "reviews:moderate",
+      "audit:read",
+      "staff:manage"
+    ],
+    "csrf_token": "mock-csrf-token"
+  }
+}

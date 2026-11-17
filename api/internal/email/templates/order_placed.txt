@@ -1,0 +1,15 @@
+{{define "subject"}}{{if .Order.PayURL}}ได้รับคำสั่งซื้อ {{.Order.No}} แล้ว รอชำระเงิน{{else}}ได้รับคำสั่งซื้อ {{.Order.No}} แล้ว{{end}}{{end}}
+{{define "preheader"}}ยอดชำระ {{baht .Order.GrandTotalSatang}}{{if .Order.PayURL}} ชำระภายใน {{thaidate .Order.PayBy}}{{end}}{{end}}
+{{define "content"}}สวัสดีคุณ{{name .Name}}
+
+ขอบคุณที่สั่งซื้อกับ ShopShip เราได้รับคำสั่งซื้อของคุณแล้ว
+{{with .Order}}{{template "ordermeta" .}}
+ชำระเงินด้วย: {{method .PaymentMethod}}
+{{if .PayURL}}
+กรุณาชำระเงินภายใน {{thaidate .PayBy}} มิฉะนั้นคำสั่งซื้อจะถูกยกเลิกอัตโนมัติ
+ชำระเงิน: {{.PayURL}}
+{{end}}
+{{template "summary" .}}
+{{template "shipto" .}}
+
+ดูคำสั่งซื้อ: {{.URL}}{{end}}{{end}}

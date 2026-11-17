@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+<radialGradient id="bg" cx="50%" cy="38%" r="75%"><stop offset="0" stop-color="#f7f7f9"/><stop offset="1" stop-color="#e9e9ee"/></radialGradient>
+<radialGradient id="sh" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="bs" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef7f1"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2c79a"/><stop offset="1" stop-color="#c9a46a"/></linearGradient><linearGradient id="truck" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0071e3"/><stop offset="1" stop-color="#0058d6"/></linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect width="1600" height="900" fill="url(#bs)"/>
+<ellipse cx="1150" cy="760" rx="470" ry="36" fill="url(#sh)"/>
+<g transform="translate(760 330)"><rect x="0" y="80" width="560" height="300" rx="40" fill="url(#truck)"/><path d="M560 160 H700 L800 270 V380 H560 Z" fill="#0a84ff"/><rect x="600" y="190" width="120" height="80" rx="14" fill="#cfe6ff"/>
+<circle cx="150" cy="390" r="62" fill="#1d1d1f"/><circle cx="150" cy="390" r="26" fill="#d2d2d7"/><circle cx="660" cy="390" r="62" fill="#1d1d1f"/><circle cx="660" cy="390" r="26" fill="#d2d2d7"/>
+<text x="280" y="250" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="80" font-weight="800" fill="#fff">FREE</text></g>
+<g transform="translate(980 160)"><rect width="200" height="160" rx="16" fill="url(#box)"/><rect x="88" width="24" height="160" fill="#b38a4f"/></g>
+</svg>

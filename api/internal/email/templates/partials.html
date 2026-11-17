@@ -1,0 +1,52 @@
+{{define "h1"}}<h1 style="margin:0 0 12px 0;font-size:26px;line-height:1.3;font-weight:700;letter-spacing:-0.4px;color:#1D1D1F;">{{.}}</h1>{{end}}
+
+{{define "p"}}<p style="margin:0 0 16px 0;font-size:16px;line-height:1.6;color:#1D1D1F;">{{.}}</p>{{end}}
+
+{{define "muted"}}<p style="margin:0 0 16px 0;font-size:14px;line-height:1.6;color:#6E6E73;">{{.}}</p>{{end}}
+
+{{define "button"}}<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:8px 0 24px 0;"><tr>
+<td align="center" bgcolor="#0071E3" style="border-radius:980px;background-color:#0071E3;">
+<a href="{{.URL}}" target="_blank" style="display:inline-block;padding:13px 28px;font-size:16px;font-weight:600;line-height:1.2;color:#FFFFFF;text-decoration:none;border-radius:980px;">{{.Label}}</a>
+</td></tr></table>{{end}}
+
+{{define "ordermeta"}}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 20px 0;background-color:#F5F5F7;border-radius:12px;">
+<tr><td style="padding:14px 18px;font-size:14px;line-height:1.6;color:#6E6E73;">
+หมายเลขคำสั่งซื้อ<br><span style="font-size:17px;font-weight:600;color:#1D1D1F;letter-spacing:0.3px;">{{.No}}</span>
+</td><td align="right" style="padding:14px 18px;font-size:14px;line-height:1.6;color:#6E6E73;">
+สั่งซื้อเมื่อ<br><span style="color:#1D1D1F;">{{thaidate .CreatedAt}}</span>
+</td></tr></table>{{end}}
+
+{{define "summary"}}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 8px 0;border-top:1px solid #E5E5EA;">
+{{range .Items}}<tr>
+<td valign="top" style="padding:14px 0;border-bottom:1px solid #E5E5EA;font-size:15px;line-height:1.5;color:#1D1D1F;">
+<div style="font-weight:600;">{{.Name}}</div>
+{{if .Variant}}<div style="font-size:13px;color:#6E6E73;">{{.Variant}}</div>{{end}}
+<div style="font-size:13px;color:#6E6E73;">{{.Qty}} × {{if strike .}}<span style="text-decoration:line-through;">{{baht .ListUnitSatang}}</span> {{end}}{{baht .UnitSatang}}{{if .PriceLabel}} · {{.PriceLabel}}{{end}}</div>
+{{range .Adjustments}}<div style="font-size:13px;color:#0066CC;">{{.Label}} {{neg .Amount}}</div>{{end}}
+</td>
+<td valign="top" align="right" style="padding:14px 0 14px 12px;border-bottom:1px solid #E5E5EA;font-size:15px;line-height:1.5;color:#1D1D1F;white-space:nowrap;">{{baht .LineTotalSatang}}</td>
+</tr>{{end}}
+</table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 20px 0;font-size:15px;line-height:1.5;">
+<tr><td style="padding:6px 0;color:#6E6E73;">ยอดรวมสินค้า</td><td align="right" style="padding:6px 0;color:#1D1D1F;white-space:nowrap;">{{baht .SubtotalSatang}}</td></tr>
+{{range .Discounts}}<tr><td style="padding:6px 0;color:#6E6E73;">{{.Label}}</td><td align="right" style="padding:6px 0;color:#0066CC;white-space:nowrap;">{{neg .Amount}}</td></tr>{{end}}
+<tr><td style="padding:6px 0;color:#6E6E73;">ค่าจัดส่ง</td><td align="right" style="padding:6px 0;color:#1D1D1F;white-space:nowrap;">{{baht .ShippingFeeSatang}}</td></tr>
+{{with .ShippingDiscount}}<tr><td style="padding:6px 0;color:#6E6E73;">{{.Label}}</td><td align="right" style="padding:6px 0;color:#0066CC;white-space:nowrap;">{{neg .Amount}}</td></tr>{{end}}
+<tr><td style="padding:12px 0 6px 0;border-top:1px solid #E5E5EA;font-size:17px;font-weight:700;color:#1D1D1F;">ยอดชำระทั้งหมด</td><td align="right" style="padding:12px 0 6px 0;border-top:1px solid #E5E5EA;font-size:17px;font-weight:700;color:#1D1D1F;white-space:nowrap;">{{baht .GrandTotalSatang}}</td></tr>
+{{if gt .SavingsSatang 0}}<tr><td colspan="2" align="right" style="padding:2px 0;font-size:13px;color:#248A3D;">คุณประหยัดไป {{baht .SavingsSatang}}</td></tr>{{end}}
+</table>
+{{end}}
+
+{{define "shipto"}}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 20px 0;">
+<tr><td style="font-size:14px;line-height:1.6;color:#6E6E73;">
+<div style="font-weight:600;color:#1D1D1F;margin-bottom:2px;">ที่อยู่จัดส่ง</div>
+{{.ShipName}} · {{.ShipPhone}}<br>{{.ShipAddress}}
+</td></tr></table>{{end}}
+
+{{define "parcel"}}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 20px 0;background-color:#F5F5F7;border-radius:12px;">
+<tr><td style="padding:16px 18px;font-size:14px;line-height:1.6;color:#6E6E73;">
+ขนส่งโดย <span style="color:#1D1D1F;font-weight:600;">{{.Carrier}}</span><br>
+เลขพัสดุ <span style="font-size:17px;font-weight:600;color:#1D1D1F;letter-spacing:0.5px;">{{.TrackingNo}}</span>
+{{if .TrackingURL}}<br><a href="{{.TrackingURL}}" style="color:#0066CC;text-decoration:none;">ติดตามพัสดุ ›</a>{{end}}
+</td></tr></table>{{end}}
