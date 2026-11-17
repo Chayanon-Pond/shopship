@@ -103,3 +103,23 @@ func seedDemo(ctx context.Context, cfg config.Config, log *slog.Logger) error {
 	}
 	return nil
 }
+
+// seedMedia: server seed-media — (re)writes the demo product images into this server's storage and fixes their URLs
+// (for a demo catalog seeded from another machine). Safe to re-run.
+func seedMedia(ctx context.Context, cfg config.Config, log *slog.Logger) error {
+	db, err := openDB(ctx, cfg)
+	if err != nil {
+		return err
+	}
+	if db == nil {
+		return errors.New("DATABASE_URL is required")
+	}
+	defer db.Close()
+	storage := platform.LocalDisk{Dir: cfg.MediaDir, BaseURL: cfg.PublicBaseURL}
+	n, err := demo.RepairMedia(ctx, db, storage)
+	if err != nil {
+		return err
+	}
+	log.Info("demo media written", "dir", cfg.MediaDir, "base_url", cfg.PublicBaseURL, "rows_updated", n)
+	return nil
+}

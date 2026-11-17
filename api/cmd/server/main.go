@@ -58,8 +58,10 @@ func main() {
 		err = createAdmin(ctx, cfg, log, os.Args[2:])
 	case "seed-demo":
 		err = seedDemo(ctx, cfg, log)
+	case "seed-media":
+		err = seedMedia(ctx, cfg, log)
 	default:
-		err = fmt.Errorf("unknown command %q (want serve | migrate up|down|reset|status | create-admin | seed-demo)", cmd)
+		err = fmt.Errorf("unknown command %q (want serve | migrate up|down|reset|status | create-admin | seed-demo | seed-media)", cmd)
 	}
 	if err != nil {
 		log.Error("exit", "err", err)
