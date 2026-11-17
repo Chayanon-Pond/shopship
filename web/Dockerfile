@@ -20,8 +20,10 @@ WORKDIR /app
 # Inlined into the client bundle / next.config at build time.
 ARG NEXT_PUBLIC_SITE_URL=https://www.shopship.example
 ARG NEXT_PUBLIC_MEDIA_ORIGIN=
+ARG NEXT_PUBLIC_PAYMENT_MOCK=false
 ENV NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL} \
     NEXT_PUBLIC_MEDIA_ORIGIN=${NEXT_PUBLIC_MEDIA_ORIGIN} \
+    NEXT_PUBLIC_PAYMENT_MOCK=${NEXT_PUBLIC_PAYMENT_MOCK} \
     NEXT_TELEMETRY_DISABLED=1 \
     NODE_ENV=production
 COPY --from=deps /app/node_modules ./node_modules
